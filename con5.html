@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{    
+        margin:0;
+        padding:0;
+        outline:0
+    }
+    .container-fluid {
+        width:100%;
+        float:left;
+    }
+    .container {
+        width:1200px;
+        margin:0px auto;
+        display:table;
+    }
+    .row {
+        width:100%;
+        float:left;
+    }
+    .col-lg-12 {
+        width:100%;
+        float:left;
+    }
+    .col-lg-11 {
+        width:91.66666667%;
+        float:left;
+    }
+    .col-lg-10 {
+        width:83.33333333%;
+        float:left;
+    }
+    .col-lg-9 {
+        width:75%;
+        float:left;
+    }
+    .col-lg-8 {
+        width:66.66666667%;
+        float:left;
+    }
+    .col-lg-7 {
+        width:58.33333333%;
+        float:left;
+    }
+    .col-lg-6 {
+        width:50%;
+        float:left;
+    }
+    .col-lg-5 {
+        width:41.66666667%;
+        float:left;
+    }
+    .col-lg-4 {
+        width:33%;
+        float:left;
+    }
+    .col-lg-3 {
+        width:25%;
+        float:left;
+    }
+    .col-lg-2 {
+        width:16.66666667%;
+        float:left;
+    }
+    .col-lg-1 {
+        width:8.33333333%;
+        float:left;
+    }
+    .had{
+      
+        text-align: center;
+        margin: 30px;
+        background-color: white;
+    }
+    .had ul li {
+        list-style: none;
+        display: inline;
+      font-size: 20px;
+        float: left;
+        margin-left: 20px;
+        color: rgb(87, 85, 85);
+font-weight: 500;
+    }
+    .had h1{
+    
+        float: left;
+        font-size: 20px;
+    }
+    .had button{
+       background-color: #00ba94; 
+    
+       padding: 8px;
+       color:#fff;
+     border: none;
+     
+        font-size: 17px;
+        
+
+    }
+
+    .fa{
+        margin-left: 10px;
+    }
+    .hading{
+        text-align: center;
+        margin-top: 10px;
+        
+    }
+    .hading h6{
+        margin-top: 15px;
+        font-size: 12px;
+        color: rgb(39, 39, 100);
+        font-family: sans-serif;
+
+    }
+    .hading p{
+        margin-top: 10px;
+        font-size: 20px;
+        font-family: sans-serif;
+        line-height: 30px;
+
+    }
+    .hading1 {
+        font-size: 17px;
+        color: gray;
+        
+        margin-top: 20px;
+        line-height: 2px;
+        margin-bottom: 20px;
+        
+    }
+    .box{
+        text-align: center;
+       background-color: white;
+      margin-top: 30px;
+        padding-left: 33px;
+        border: 1px groove;
+border-radius: 7px;
+
+        
+    }
+    .box h6{
+
+        color: rgb(59, 58, 58);
+        font-size: 19px;
+        text-align: center;
+        margin-top: 10px;
+        padding: 15px;
+        padding-bottom: 5px;
+        
+        
+    }
+  
+    .inner{
+        
+        background-image: url('https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=700&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4MTMxODUyNw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1500');
+        height: 700px;
+        background-size: cover;
+        background:linear-gradient(0deg, rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url(https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=700&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4MTMxODUyNw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1500);
+
+
+
+    }
+    .inner1{
+        text-align: center;
+        margin-top: 200px;
+
+    }
+    .inner1 h1{
+        color: #fff;
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+    .inner1 h2{
+        color: rgb(173, 169, 169);
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    
+     .text{
+        width: 60%;
+        padding: 15px;
+        margin-top: 30px;
+        font-size: 15px;
+        border-radius: 5px;
+        border: none;
+
+    }
+ .sub{ 
+width: 15%;
+text-align: center;
+padding: 15px;
+color: white;
+background-color: mediumturquoise;
+font-size: 14px;
+margin-top: 30px;
+margin-left: 5px; 
+border: none;
+border-radius: 5px;
+
+    }
+    .cg{
+        --bs-bg-opacity: 1;
+        background-color: rgb(248, 244, 244);
+        margin-top: 100px;
+    }
+    .bsg{
+        background-color: #fff;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        padding: 30px;
+        width: 95%;
+        float: left;
+    }
+    .pa{
+        margin-top: 20px;
+        margin-left: 37px;
+        
+            }
+            .pa p{
+                color: rgb(170, 166, 166);
+                font-size: 18px;
+            }
+            .pa1 input{
+                
+                margin-top: 20px;
+            font-size: 17px;
+                padding: 12px;
+                width: 60%;
+                border-radius: 5px;
+                border: none;
+                background-color: rgb(194, 186, 186);
+                color: rgb(173, 169, 169);
+            
+            }
+            .pa1 button{
+                padding: 12px;
+                width: 18%;
+                color: #fff;
+                background-color: #0061f2;
+                border: none;
+                border-radius: 5px;
+                margin-right: 10px;
+                margin-top: 20px;
+            }
+            .pa1 p {
+                margin-top: 10px;
+                color:rgb(173, 169, 169) ;
+                font-size: 14px;
+            } 
+            .pa h1{
+                color: rgb(68, 67, 67);
+            }  
+            .nbs{
+                width: 100%;
+                float: left;
+                 margin-top: 50px;
+                 text-align: center;
+                 margin-bottom: 20px;
+            } 
+            .nbs h6{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                color: #0061f2;
+                font-size: 12px;
+            }
+            .nbs h4{
+                margin-bottom: 10px;
+                color: gray;
+                margin-bottom: 50px;
+                font-size: 17px;
+                line-height: 2px;
+                font-size: 18px;
+                padding: 10px;
+                }
+          
+             
+            
+ 
+ 
+ .design{
+    margin-top: 10px;
+   
+    margin: 10px;
+    width: 31%;
+    color: rgb(47, 48, 48);
+    
+    
+ }
+ .p0{
+margin-top: 5px;
+font-size: 18px;
+color: rgb(32, 32, 32);
+ }
+ .p9{
+margin-top: 5px;
+color: rgb(47, 48, 48);
+font-size: 15px;
+ }
+ .p8{
+   margin-top: 5px;
+   color: rgb(47, 48, 48); 
+   font-size: 15px;
+ }
+ .p7{
+margin-top: 10px;
+background-color: rgb(245, 239, 239);
+text-align: center;
+color: rgb(71, 71, 71);
+padding: 20px;
+font-size: 15px;
+
+ }
+ 
+    .fa-star-half-empty{
+        color: #f76400;
+    }
+    .fa-star{
+        color: #f76400;
+    }
+
+    .footer{
+        width: 100%;
+        float: left;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        
+        
+    }
+    .footer ul li{
+        list-style: none;
+        margin-top: 4px;
+    
+    }
+    .link{
+        display: inline;
+    
+        float: left;
+    }
+    .text1{
+        background-color: rgb(49, 48, 48);
+        width: 100%;
+        color: #f0eded;
+    
+    }
+    .k{
+        float: left;
+        margin-top: 50px;
+        font-size: 13px;
+    }
+    .k1{
+        float: right;
+        margin-top: 50px;
+        font-size: 13px;
+    }
+  
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container-fluid had">
+        <div class="container">
+            <div class="row">
+                
+<div class="col-lg-6"><h1>SB UI Kit Pro
+</h1></div>
+
+
+<div class="col-lg-6">
+<ul>
+    <li>Home</li>
+    <li>Landings<i class="fa fa-angle-right"></i></li>
+    <li>Pages<i class="fa fa-angle-right"></i></li>
+    <li>Documentation<i class="fa fa-angle-right"></i></li>
+</ul>
+<button>Buy Now<i class="fa fa-long-arrow-right"></i></button>
+</div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">&nbsp;</div>
+                <div class="col-lg-6">
+<div class="inner1">
+<h1>Find the best businesses in town</h1>
+<h2>Search for restaurants, contractors, and other local businesses in your area to find out which ones are the best!</h2>
+<input class="text" type="text" placeholder="Find your businesses"> 
+<input type="submit" placeholder="Search" class="sub">
+</div>
+</div>
+<div class="col-lg-3">&nbsp;</div>
+            </div>
+
+        </div>
+
+    </div> 
+    <div class="container-fluid cg">
+    <div class="container">
+<div class="row">
+    <div class="col-lg-3">&nbsp;</div>
+    <div class="col-lg-6">
+    <div class="hading">
+<h6>BROWSE BUSINESSES</h6>
+<p class="hading1">Not sure what to search for? Browse some of the most popular categories.</p>
+</div>
+</div>
+<div class="col-lg-3">&nbsp;</div>
+
+
+<div class="container">
+
+
+<div class="col-lg-3">
+<div class="box">
+<img src="https://source.unsplash.com/Yr4n8O_3UPc/800x500" style="width:100%;">
+<h6>Restuarent</h6>
+
+</div>
+</div>
+
+<div class="col-lg-3">
+<div class="box">
+<img src="https://source.unsplash.com/YbGMa1Jz1yY/800x500" style="width: 100%;">
+<h6>Restuarent</h6>
+
+</div>
+</div>
+
+<div class="col-lg-3">
+<div class="box">
+<img src="https://source.unsplash.com/Cl-OpYWFFm0/800x500" style="width: 100%;">
+<h6>Restuarent</h6>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+<div class="box">
+<img  src="https://source.unsplash.com/E285pJbC4uE/800x500" style="width: 100%;">
+<h6>Restuarent</h6>
+
+</div>
+</div>
+</div>
+
+<div class="col-lg-3">
+<div class="box">
+<img  src="https://source.unsplash.com/CQfNt66ttZM/800x500" style="width:100%;">
+<h6>Restuarent</h6>
+
+</div>
+</div>
+
+<div class="col-lg-3">
+<div class="box">
+<img src="https://source.unsplash.com/tNALoIZhqVM/800x500" style="width: 100%;">
+<h6>Restuarent</h6>
+
+</div>
+</div>
+
+<div class="col-lg-3">
+<div class="box">
+<img src="https://source.unsplash.com/r3XvSBEQQLo/800x500" style="width: 100%;">
+<h6>Restuarent</h6>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+<div class="box">
+<img src="https://source.unsplash.com/WCm4dFvZnMM/800x500" style="width: 100%;">
+<h6>Restuarent</h6>
+
+</div>
+</div>
+
+    </div>
+    </div>
+      
+    
+    <div class="container-fluid">
+        <div class="container">
+            <div class="bsg">
+            <div class="row">
+<div class="col-lg-6">
+    <div class="pa">
+    <h1>Get the latest news</h1>
+    <p>Stay in the loop with the latest updates and features</p>
+    <p>added to our application!</p>
+</div>
+</div>
+<div class="col-lg-6">
+    <div class="pa1">
+    <input type="text" placeholder="Youremail@example.com">
+    <button>Sign up</button>
+    <p>You can unsubscribe at any time.</p>
+</div>
+</div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="nbs">
+            <div class="row">
+<div class="col-lg-3">&nbsp;</div>
+<div class="col-lg-6">
+    <h6>NEW BUSINESSES</h6>
+    <h4>Here are some of the most popular new businesses in your area.</h4>
+</div>
+<div class="col-lg-3">&nbsp;</div>
+<div class="container">
+    
+<div class="col-lg-4 design">
+<img  class="imgg" src="https://source.unsplash.com/E6HjQaB7UEA/800x500" style=" width:100%;">
+<p class="p0">The Bamboo Ranch</p>
+<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-empty "></i>
+<p class="p9">( 12 Reviews)</p>
+<p class="p8">Upper West Ceon, Gram</p>
+<p class="p7"><i class="fa fa-drivers-license "></i>opened 2 month ago</p>
+
+</div>
+<div class="col-lg-4 design">
+    <img class="imgg" src="https://source.unsplash.com/ODNxWmNja2U/800x500" style=" width:100%;">
+    <p class="p0">Lakeside oyster</p>
+    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-empty "></i>
+    <p class="p9">( 8 Reviews)</p>
+    <p class="p8">East Fom, Kugan</p>
+    <p class="p7"><i class="fa fa-drivers-license "></i>opened 1 month ago</p>
+  
+    </div>
+    
+    <div class="col-lg-4 design">
+        <img class="imgg" src="https://source.unsplash.com/sWEpcc0Rm0U/800x500" style=" width:100%;">
+        <p class="p0">Wild Junction</p>
+        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-empty "></i>
+        <p class="p9">( 29 Reviews)</p>
+        <p class="p8">shoties Wood ,Drada</p>
+        <p class="p7"><i class="fa fa-drivers-license "></i>opened 2 Week ago</p>
+      
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+            </div>
+    
+    
+
+    <div class="container-fluid text1">
+        <div class="container">
+            <div class="footer">
+            <div class="row">
+<div class="col-lg-3">
+<h3>SB UI Kit Pro</h3>
+<h4>Design made easy</h4>
+<ul>
+    <li><i class="fa fa-instagram link"></i></li>
+    <li><i class="fa fa-facebook-square link"></i></li>
+    <li><i class="fa fa-github link"></i></li>
+    <li><i class="fa fa-twitter-square link"></i></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<ul>
+    <li>PRODUCT</li>
+    <li>Landig page</li>
+    <li>Pages</li>
+    <li>Section</li>
+    <li>Documentaion</li>
+    <li>Changeiog</li>
+</ul>
+</div>
+<div class="col-lg-3">
+<ul>
+    <li>TECHNICAL</li>
+    <li>Documentaion</li>
+<li>Changeiog</li>
+<li>Theme customizer</li>
+<li>UI KIT</li>
+</ul>
+</div>
+<div class="col-lg-3">
+<ul>
+    <li>INCLUDES</li>
+    <li>Components</li>
+    <li>Layouts</li>
+    <li>Code Samples</li>
+    <li>utilize</li>
+    <li>code samples</li>
+    <li>product</li>
+    <li>update</li>
+    </ul>
+</div>
+<div class="container rmn">
+<div class="col-lg-6">
+    <p class="k">Copyright © Your Website 2023</p>
+    </div>
+    <div class="col-lg-6">
+    <p class="k1">Privacy Policy · Terms & Conditions</p>
+    </div>
+    </div>
+</div>
+ </div>
+ </div>
+</div>
+
+
+</body>
+</html>
